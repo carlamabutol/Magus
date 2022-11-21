@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "four",
+    "name": "Magus Audio",
     "slug": "four",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,16 +18,28 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      },
+      "bundleIdentifier": "com.crolmabutol.four"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.crolmabutol.four"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/splash.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1ffd8108-4ede-4dd8-8e35-a69898046162"
+      }
     }
   }
 }
